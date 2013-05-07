@@ -100,7 +100,7 @@ permissions_validity_in_ms: 2000
 #
 # See http://wiki.apache.org/cassandra/Operations for more on
 # partitioners and token selection.
-partitioner: <%= partitioner %> 
+partitioner: <%= @partitioner %> 
 
 data_file_directories:
   <% @data_file_directories.each do |dir| %>
