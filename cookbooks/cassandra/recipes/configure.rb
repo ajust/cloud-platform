@@ -18,6 +18,7 @@ template "/usr/local/cassandra/conf/cassandra.yaml" do
     :version                => node['cassandra']['version'],
     :cluster_name           => node['cassandra']['cluster_name'],
     :seeds                  => node['cassandra']['seeds'],
+    :partitioner            => node['cassandra']['partitioner'],
     :num_tokens             => node['cassandra']['num_tokens'],
     :data_file_directories  => node['cassandra']['data_file_directories'],
     :commitlog_directory    => node['cassandra']['commitlog_directory'],
